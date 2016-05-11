@@ -1,5 +1,6 @@
 <?php
 
+if ($user->is_connected()) $g_connexion = "<b>connected</b>";
 
 echo '
 <!DOCTYPE html>
@@ -10,7 +11,8 @@ echo '
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <body>
-<div class="status">'.$status.'</div>
+<div class="connexion">'.$g_connexion.'</div>
+<div class="status">'.$g_status.'</div>
 <div class="page">
 	<div class="menu">
 		<a href="/">Home</a>
