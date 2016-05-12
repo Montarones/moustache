@@ -14,6 +14,8 @@ $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
 
 
+
+
 include('connexion.php');
 
 
